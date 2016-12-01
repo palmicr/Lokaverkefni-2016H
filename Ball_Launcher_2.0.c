@@ -102,6 +102,11 @@ task main()
 		{
 			motor[ammoMotor] = 0;
 		}
+		// Emergency stop button ------------------------------------------
+		if(vexRT[Btn7U] == 1)
+		{
+			i = 0;
+		}
 
 	}
 }
