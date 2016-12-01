@@ -1,0 +1,50 @@
+int i = 1
+while(i == 1)
+{                     
+	leftMotor = pins
+	rightMotor = pins
+
+
+	// Raise or lower aim
+
+	if(tiltUp == 1)
+	{
+		motor = ?
+	}
+	else if(tiltDown == 1)
+	{
+		motor = ?
+	}
+	else
+	{
+		motor = 0
+	}
+
+
+	// Run the Weels of the gun
+
+	if(hjolstart == 1)
+	{
+		wheelsmotor1 = ?
+	}
+	if(hjolStoppa == 1)
+	{
+		wheelsMotor2 = ?
+	}
+
+
+	// Ammo 
+
+	if(pushBall == 1)
+	{
+		reloadMotor = ?
+	}
+	else if(fwetchBall == 1)
+	{
+		reloadMotor = -?
+	}
+	else
+	{
+		reloadMotorr = 0
+	}
+}
