@@ -92,11 +92,24 @@ task main()
 		// Ammo ------------------------------------------------------------
 		if(vexRT[Btn8U] == 1)
 		{
+			v = 1;
+		}
+		if(vexRT[Btn8D] == 1)
+		{
+			v = 2;
+		}
+		if(v == 1)
+		{
 			motor[ammoMotor] = 35;
+			wait1Msec(1000);
+			motor[ammoMotor] = -40;
+			wait1Msec(1000);
+			v = 0;
+			
 		}
 		else if(vexRT[Btn8D] == 1)
 		{
-			motor[ammoMotor] = -40;
+			
 		}
 		else
 		{
