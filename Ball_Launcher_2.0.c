@@ -19,21 +19,16 @@
 									gun. The robot is controlled via remote control and the user controls how
 									much or if the gun is tilted within a short range and ofcourse where the
 									robot will be located and when or if to shoot.
-
 									Buttons:
-
 									Pins:
 									Left pin: Forward / backwards
 									Right pin: Left / right
-
 									To the right side of the pins:
 									Lower button: Pushes the ball towards the spinning wheels.
 									Top button: Loads the next ball.
-
 									Left buttons on the front of the remote:
 									Upper: Tilt up.
 									Lower Tilt down.
-
 									Right buttons on the front of the remote:
 									Upper: Start spinning the wheels.
 									Lower: Stop spinning the wheels.
@@ -101,9 +96,9 @@ task main()
 		if(v == 1)
 		{
 			motor[ammoMotor] = 35;
-			wait1Msec(1000);
-			motor[ammoMotor] = -40;
-			wait1Msec(1000);
+			wait1Msec(2000);
+			motor[ammoMotor] = -60;
+			wait1Msec(1500);
 			v = 0;
 			
 		}
